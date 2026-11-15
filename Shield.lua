@@ -2,8 +2,8 @@
 -- BACKDOOR SHIELD V1.5 - FULL UTILITY & SCANNER HUB (RAYFIELD UI)
 -- =============================================================================
 
--- 1. Load the Rayfield Library Safely
-local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/mmminika5-oss/Orion-project-test/refs/heads/main/Shield.lua"))()
+-- Di dalam file GitHub kamu, tulisannya HARUS tetap link sirius ya:
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- 2. Initialize the Core Window
 local Window = Rayfield:CreateWindow({
