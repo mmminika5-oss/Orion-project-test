@@ -3,7 +3,7 @@
 -- =============================================================================
 
 -- 1. Load the Rayfield Library Safely
-local Rayfield = loadstring(game:HttpGet('https://sirius.menu'))()
+local Rayfield = loadstring(game:HttpGet("https://raw.githubusercontent.com/mmminika5-oss/Orion-project-test/refs/heads/main/Shield.lua"))()
 
 -- 2. Initialize the Core Window
 local Window = Rayfield:CreateWindow({
