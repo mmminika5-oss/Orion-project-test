@@ -2,7 +2,7 @@
 -- BACKDOOR SHIELD V1.5 - FULL UTILITY & SCANNER HUB (RAYFIELD UI)
 -- =============================================================================
 
--- Di dalam file GitHub kamu, tulisannya HARUS tetap link sirius ya:
+-- 1. Load the Rayfield Library Safely
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 -- 2. Initialize the Core Window
@@ -164,14 +164,12 @@ InjectTab:CreateButton({
             local Lighting = game:GetService("Lighting")
             local Workspace = game:GetService("Workspace")
 
-            -- 1. Remove existing Sky elements to avoid visual overlay bugs
             for _, child in ipairs(Lighting:GetChildren()) do
                 if child:IsA("Sky") then
                     child:Destroy()
                 end
             end
 
-            -- 2. Configure Authentic Classic c00lkidd Skybox Textures
             local classicC00lKidId = "rbxassetid://158118263" 
 
             local c00lSky = Instance.new("Sky")
@@ -184,7 +182,6 @@ InjectTab:CreateButton({
             c00lSky.SkyboxUp = classicC00lKidId
             c00lSky.Parent = Lighting
 
-            -- 3. Deploy Ultra-Slowed Ambient Audio Track Sequence
             local zakheloAudioId = 1839246711 
             
             local oldSound = Workspace:FindFirstChild("AmbientOverrideSound")
@@ -208,7 +205,6 @@ InjectTab:CreateButton({
     end,
 })
 
--- INTEGRATED INTERACTIVE VOLUME CONTROL SLIDER
 InjectTab:CreateSlider({
     Name = "Background Audio Volume",
     Info = "Real-time volume control for the ZAKHELO ambient sound track.",
